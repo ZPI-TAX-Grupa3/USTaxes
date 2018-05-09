@@ -1,12 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.ChoiceBox?>
-<?import javafx.scene.control.ListView?>
 <?import javafx.scene.control.Menu?>
 <?import javafx.scene.control.MenuBar?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.SeparatorMenuItem?>
 <?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.HBox?>
@@ -59,7 +60,11 @@
               <items>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
                      <children>
-                        <ListView fx:id="stateList" layoutX="-24.0" layoutY="21.0" prefHeight="372.0" prefWidth="167.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                        <TableView layoutX="-33.0" layoutY="25.0" prefHeight="372.0" prefWidth="167.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                          <columns>
+                            <TableColumn prefWidth="162.0" text="States" />
+                          </columns>
+                        </TableView>
                      </children>
                   </AnchorPane>
                 <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="160.0" prefWidth="100.0">
@@ -74,7 +79,11 @@
                               </HBox>
                               <HBox prefHeight="345.0" prefWidth="465.0">
                                  <children>
-                                    <ListView prefHeight="345.0" prefWidth="151.0" />
+                                    <TableView prefHeight="345.0" prefWidth="152.0">
+                                      <columns>
+                                        <TableColumn prefWidth="150.0" text="Added Products" />
+                                      </columns>
+                                    </TableView>
                                  </children>
                               </HBox>
                            </children>
