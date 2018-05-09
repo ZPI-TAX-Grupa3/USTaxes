@@ -77,15 +77,11 @@
                                     <TextField fx:id="priceField" />
                                  </children>
                               </HBox>
-                              <HBox prefHeight="345.0" prefWidth="465.0">
-                                 <children>
-                                    <TableView prefHeight="345.0" prefWidth="152.0">
-                                      <columns>
-                                        <TableColumn prefWidth="150.0" text="Added Products" />
-                                      </columns>
-                                    </TableView>
-                                 </children>
-                              </HBox>
+                              <TableView prefHeight="347.0" prefWidth="465.0">
+                                <columns>
+                                  <TableColumn prefWidth="447.0" text="Result" />
+                                </columns>
+                              </TableView>
                            </children>
                         </VBox>
                      </children>
